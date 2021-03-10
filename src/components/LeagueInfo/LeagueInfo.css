@@ -1,0 +1,11 @@
+.LeagueInfo{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.team-info{
+    background: #fff;
+    margin: 15px;
+    height: 200px;
+    padding: 15px;
+}
