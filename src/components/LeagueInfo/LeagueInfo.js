@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom';
 const element = <FontAwesomeIcon icon={faArrowRight} />
 
 const LeagueInfo = (props) => {
-    const {strLeague, strSport,idLeague} = props.leagueName;
+    const {strTeam, strSport,strTeamBadge,idTeam} = props.leagueName;
     return (
         <div className="col-md-4 col-sm-12 LeagueInfo" >
             <div className="team-info  ">
-                    <h4>{strLeague}</h4>
+                <img src={strTeamBadge} alt=""/>
+                    <h4>{strTeam}</h4>
                     <p>Sports Type: {strSport} </p>
-                    <Link to={`/details/${idLeague}`}>
+                    <Link to={`/details/${idTeam}`}>
                         <button>Explore {element} </button>
                     </Link>
             </div>

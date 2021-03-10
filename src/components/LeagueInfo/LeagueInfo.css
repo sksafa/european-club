@@ -6,6 +6,10 @@
 .team-info{
     background: #fff;
     margin: 15px;
-    height: 200px;
+    height: 230px;
     padding: 15px;
+}
+.team-info img{
+    width: 80px;
+    height: 80px;
 }
