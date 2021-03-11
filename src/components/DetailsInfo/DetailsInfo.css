@@ -1,0 +1,19 @@
+.teamInfoSection{
+    background-color: crimson;
+    color: #fff;
+    margin-top: 30px;
+    padding: 12px 22px;
+    border-radius: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.teamInfoSection h2{
+    font-size: 50px;
+    font-weight: 900;
+    width: 100%;
+}
+.teamInfoSection p{
+    font-size: 18px;
+    margin: 6px 12px;
+    letter-spacing: 1px;
+    color: #fff;
+}
