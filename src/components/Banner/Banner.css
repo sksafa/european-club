@@ -1,13 +1,10 @@
 
-.banner{
-    background-image:url('bg2.jpg') ;
-    height: 250px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-   
-}
 .overlay{
     height: 250px;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(124, 64, 72, 0.3);
+}
+
+.caption{
+    color: #fff;
+    padding-top: 54px;
 }

@@ -4,3 +4,6 @@
   margin: 0 auto;
   width: 95%;
 }
+.mainBody{
+  background-image: linear-gradient(to right, rgb(141, 5, 32),rgb(12, 6, 47) );
+}

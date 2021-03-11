@@ -13,9 +13,9 @@ const Home = () => {
     }, [])
 
     return (
-        <div className="bg-primary">
+        <div className="mainBody">
             <Banner></Banner>
-            <div className="bg-primary home-css">
+            <div className="home-css">
             { teamName.map(teamName => <TeamInfo teamName={teamName} ></TeamInfo>)}
             </div>
         </div>

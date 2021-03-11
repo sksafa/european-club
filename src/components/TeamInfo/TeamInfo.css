@@ -4,12 +4,27 @@
 }
 
 .team-info{
-    background: #fff;
+    background-image: linear-gradient(to right, rgb(218, 10, 51),rgb(25, 14, 90) );
     margin: 15px;
     height: 230px;
     padding: 15px;
+    color: #fff;
+    border-radius: 42px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .team-info img{
     width: 80px;
     height: 80px;
+}
+.team-info h4{
+    font-weight: 600;
+}
+.team-info button{
+
+    background-image: linear-gradient(to right, rgb(240, 27, 70),rgb(65, 44, 184) );
+    border: 0px;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+   border-radius: 3px;
 }
