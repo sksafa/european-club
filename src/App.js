@@ -1,7 +1,7 @@
 
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import Home from "./components/Home/Home";
-import LeagueDetails from "./components/LeagueDetails/LeagueDetails";
+import TeamDetails from "./components/TeamDetails/TeamDetails";
 import NoMatch from "./components/NoMatch/NoMatch";
 
 
@@ -20,7 +20,7 @@ function App() {
         </Route>
 
         <Route path="/details/:idTeam">
-           <LeagueDetails></LeagueDetails>
+           <TeamDetails></TeamDetails>
         </Route>
         
         <Route path="*">

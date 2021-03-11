@@ -1,5 +1,7 @@
 .teamInfoSection{
-    background-color: crimson;
+    /* background-color: crimson; */
+
+    background-image: linear-gradient(to right, crimson,rgb(26, 9, 126) );
     color: #fff;
     margin-top: 30px;
     padding: 12px 22px;
@@ -16,4 +18,8 @@
     margin: 6px 12px;
     letter-spacing: 1px;
     color: #fff;
+}
+.teamInfoSection img{
+    width: 100%;
+    
 }

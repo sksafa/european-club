@@ -1,25 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css'
 import Banner from '../Banner/Banner';
-import LeagueInfo from '../LeagueInfo/LeagueInfo';
+import TeamInfo from '../TeamInfo/TeamInfo';
 
 const Home = () => {
-// { sortName.map(leagueName => <LeagueInfo leagueName={leagueName} ></LeagueInfo>)}
-    const [leagueName, setLeagueName] = useState([]);
+
+    const [teamName, setTeamName] = useState([]);
     useEffect(() => {
         fetch('https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League')
             .then(res => res.json())
-            .then(data => setLeagueName(data.teams))
+            .then(data => setTeamName(data.teams))
     }, [])
-
-    console.log(leagueName);
 
     return (
         <div className="bg-primary">
-            
             <Banner></Banner>
             <div className="bg-primary home-css">
-            { leagueName.map(leagueName => <LeagueInfo leagueName={leagueName} ></LeagueInfo>)}
+            { teamName.map(teamName => <TeamInfo teamName={teamName} ></TeamInfo>)}
             </div>
         </div>
     );

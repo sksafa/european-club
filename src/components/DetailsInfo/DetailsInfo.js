@@ -2,9 +2,20 @@ import React from 'react';
 import './DetailsInfo.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt,faFlag,faFutbol,faMars } from '@fortawesome/free-solid-svg-icons'
+import male from './male.png'
+import female from './female.png'
 
 const DetailsInfo = (props) => {
     const {strTeam,intFormedYear,strCountry,strSport,strGender } = props.teamInfo;
+
+    let genderImage;
+    if(strGender === 'Male'){
+        genderImage = <img src={male} alt=""/>
+    }else{
+        genderImage = <img src={female} alt=""/>
+    }
+
+
 
     return (
         <div className="container teamInfoSection">
@@ -17,7 +28,9 @@ const DetailsInfo = (props) => {
                     <p><FontAwesomeIcon icon={faMars} /> Gender: {strGender} </p>
                 </div>
                 <div className="col-md-1 col-sm-12"></div>
-                <div className="col-md-5 col-sm-12">hgggfdgdfg</div>
+                <div className="col-md-5 col-sm-12">
+                   {genderImage}
+                </div>
             </div>
         </div>
     );

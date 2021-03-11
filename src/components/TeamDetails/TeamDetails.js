@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import DetailsInfo from '../DetailsInfo/DetailsInfo';
+import SocialInfo from '../SocialInfo/SocialInfo';
 import TeamBanner from '../TeamBanner/TeamBanner';
 import TeamDescription from '../TeamDescription/TeamDescription';
-import './LeagueDetails.css'
+import './TeamDetails.css'
 
-const LeagueDetails = () => {
+const TeamDetails = () => {
 
     const { idTeam } = useParams();
     const [teamInfo, setInfo] = useState({});
@@ -27,8 +28,10 @@ const LeagueDetails = () => {
                 <DetailsInfo teamInfo={teamInfo}></DetailsInfo>
             </div>
             <TeamDescription teamInfo={teamInfo}></TeamDescription>
+            <SocialInfo teamInfo={teamInfo}></SocialInfo>
+
         </div>
     );
 };
 
-export default LeagueDetails;
+export default TeamDetails;

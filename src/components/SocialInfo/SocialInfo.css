@@ -1,0 +1,33 @@
+
+.social {
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    
+}
+.social a{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    margin-top: 14px;
+    margin-right: 27px;
+    font-size: 34px;
+    padding: 3px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+}
+
+.facebook{
+    background-color: #3b5998;
+    color: #fff;
+}
+.twitter{
+    background-color: #55acee;
+    color: #fff;
+}
+.youtube{
+    background-color: #FF0000;
+    color: #fff;
+}
